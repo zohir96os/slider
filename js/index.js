@@ -13,6 +13,6 @@ let toggle = document.querySelector(".switch span");
 btnSwitch.addEventListener("click", (e) => {
   toggle.classList.toggle("switched");
   if (toggle.classList.contains("switched")) {
-    price.innerHTML *= 0.025;
+    price.innerHTML = price.innerHTML * 0.25;
   }
 });
