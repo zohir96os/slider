@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Interactive pricing component</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="intro">
+        <h2>Simple, traffic-based pricing</h2>
+        <p>Sign-up for our 30-day trial. No credit card required</p>
+      </div>
+      <div class="pricing-card">
+        <div class="slider">
+          <div class="range">
+            <p class="views"><span>100K</span> PAGEVIEWS</p>
+            <p class="plan">$<span>16</span>/month</p>
+          </div>
+          <div class="rang-slider">
+            <input
+              id="slider"
+              type="range"
+              min="20"
+              max="100"
+              step="5"
+              value="50"
+            />
+          </div>
+          <div class="billing">
+            <p class="monthly">Monthly Billing</p>
+            <button class="switch">
+              <span class="toggle"></span>
+            </button>
+            <p class="yearly">Yearly Billing <span>25% discount</span></p>
+          </div>
+        </div>
+        <div class="pricing-card-footer">
+          <ul>
+            <li>Unlimited websites</li>
+            <li>100% data ownership</li>
+            <li>Email reports</li>
+          </ul>
+          <button class="trial">Start my trial</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
